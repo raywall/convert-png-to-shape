@@ -199,5 +199,5 @@ if __name__ == "__main__":
         print("Uso: python script.py <caminho_da_imagem.png>")
         sys.exit(1)
 
-    image_path = '/Users/macmini/Downloads/datadog_logo'
+    image_path = os.path.splitext(sys.argv[1])[0]
     main(image_path)
